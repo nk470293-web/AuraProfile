@@ -23,4 +23,257 @@
         <a href="contact.html">Contact</a>
     </div>
 </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AuraProfile – Build Your Personal Brand</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        color: #0a0a0a;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        position: sticky;
+        top: 0;
+        background: rgba(255,255,255,0.65);
+        backdrop-filter: blur(18px);
+        z-index: 10;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    nav a {
+        text-decoration: none;
+        color: #0a0a0a;
+        margin-left: 28px;
+        font-weight: 500;
+        transition: 0.2s ease;
+    }
+    nav a:hover {
+        opacity: 0.6;
+    }
+
+    /* BUTTONS */
+    .btn-primary {
+        background: #000000;
+        padding: 13px 32px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s ease;
+        display: inline-block;
+    }
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        opacity: 0.85;
+    }
+    .btn-secondary {
+        padding: 13px 32px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        color: #000;
+        font-weight: 600;
+        text-decoration: none;
+        margin-left: 14px;
+        transition: 0.3s ease;
+    }
+    .btn-secondary:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 140px 40px 120px;
+        max-width: 880px;
+        margin: auto;
+        animation: fadeIn 1s ease-in-out;
+    }
+    .hero h1 {
+        font-size: 58px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+    .hero p {
+        font-size: 22px;
+        color: #555;
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* FEATURES */
+    .section {
+        padding: 100px 60px;
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .subtitle {
+        max-width: 680px;
+        margin: auto;
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 60px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 32px;
+    }
+    .card {
+        background: #fafafa;
+        border-radius: 16px;
+        padding: 28px;
+        border: 1px solid #eee;
+        transition: 0.25s ease;
+        text-align: left;
+    }
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0px 20px 35px rgba(0,0,0,0.06);
+    }
+    .card h3 {
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .card p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* FINAL CTA */
+    .final {
+        padding: 140px 40px;
+        text-align: center;
+    }
+    .final h2 {
+        font-size: 44px;
+        margin-bottom: 14px;
+    }
+    .final p {
+        color: #555;
+        max-width: 680px;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 40px;
+        background: #fafafa;
+        color: #777;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo" style="font-size:22px; font-weight:700;">AuraProfile</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Build Your Personal Brand in 60 Seconds — Powered by AI</h1>
+    <p>AuraProfile creates your bio, resume, headshots, portfolio, and content strategy instantly. A smarter, faster way to look professional online.</p>
+
+    <div style="margin-top:35px;">
+        <a class="btn-primary" href="#">Get Started Free</a>
+        <a class="btn-secondary" href="#">Watch Demo</a>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+    <h2 class="title">What You Can Create in Seconds</h2>
+    <p class="subtitle">Smart, elegant tools designed to elevate your professional identity effortlessly.</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>AI Personal Bio Generator</h3>
+            <p>Create short, long, and platform-specific bios that reflect your unique voice.</p>
+        </div>
+
+        <div class="card">
+            <h3>Resume & LinkedIn Optimizer</h3>
+            <p>ATS-friendly, keyword-rich resumes crafted instantly by advanced AI.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Headshot Creator</h3>
+            <p>Upload a photo and receive premium, studio-quality headshots.</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Builder</h3>
+            <p>Transform your projects into polished, professional case studies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Content Planner</h3>
+            <p>Get a personalized 30-day posting strategy tailored to your goals.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Mentor</h3>
+            <p>Your own branding and career assistant for guidance and clarity.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+    <h2>Ready to Build a Personal Brand That Opens Doors?</h2>
+    <p>Start creating your bio, resume, headshots, and portfolio today — with intelligent assistance at every step.</p>
+    <a class="btn-primary" href="#">Get Started Free</a>
+</section>
+
+<footer>
+    AuraProfile © 2025 — Crafting Identities with Intelligence
+</footer>
+
+</body>
+</html>
+
 
